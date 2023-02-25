@@ -22,9 +22,9 @@ SELECT  count(shut_time)/365 AS AVERAGE_TF_COMPLAINTS_per_DAY from lesco.dbo.cmp
 
                                                         # MORE QUERIES... #
 
-SELECT * FROM lesco.dbo.cmp where shifts = '1st shift';  # 1ST SHIFT COMPLAINTS = 2489 
-SELECT * FROM lesco.dbo.cmp where shifts = '2nd shift';  # 2ND SHIFT COMPLAINTS = 2363 
-SELECT * FROM lesco.dbo.cmp where shifts = '3rd shift';  # 3RD SHIFT COMPLAINTS = 890 
+SELECT * FROM lesco.dbo.cmp where shifts = '1st shift';                                      # 1ST SHIFT COMPLAINTS = 2489 
+SELECT * FROM lesco.dbo.cmp where shifts = '2nd shift';                                      # 2ND SHIFT COMPLAINTS = 2363 
+SELECT * FROM lesco.dbo.cmp where shifts = '3rd shift';                                      # 3RD SHIFT COMPLAINTS = 890 
 SELECT * from lesco.dbo.cmp where Shut_TIME > '2022-07-01' and Shut_TIME < '2023-01-01';     # YEAR 2022 COMPLAINTS = 2811 
 SELECT * from lesco.dbo.cmp where Shut_TIME > '2023-01-01' and Shut_TIME < '2023-07-01';     # YEAR 2023 COMPLAINTS = 2931 
 SELECT * from lesco.dbo.cmp where Shut_TIME > '2022-07-01' and Shut_TIME < '2022-10-01';     # YEAR 2022 3RD QUARTER (JUL-SEP) COMPLAINTS = 1893 
